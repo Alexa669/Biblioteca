@@ -1,0 +1,74 @@
+/* Estilos personalizados para el formulario de registro */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+.container {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #28435f
+  }
+  
+  a{
+    font-family: Arial, sans-serif;
+    color: #28435f;
+    size: 5px;
+   
+  }
+  
+  form {
+    background-image: linear-gradient(to left, #afcdea ,#c6ced7);;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    font-weight: bold;
+  }
+  
+  .btn-link {
+    display: block;
+    text-align: center;
+  }
+
+  .mb-3 label {
+    display: block;
+    margin-bottom: 5px;
+    color: #22456b;
+  }
+  
+  .mb-3 input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5082b4ef;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 25px;
+  }
+  
+  button:hover {
+    background-color: #4a5ac5;
+  }
