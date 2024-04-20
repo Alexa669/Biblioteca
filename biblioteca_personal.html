@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Administrar Biblioteca Personal</title>
+  <!-- Enlace a Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos personalizados -->
+  <style>
+    /* Estilos personalizados aquí */
+  </style>
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Mi Biblioteca</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="biblioteca_personal.html">Administrar Biblioteca Personal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="search.html">Buscar Libros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Salir</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container mt-4">
+  <h2>Administrar Biblioteca Personal</h2>
+  
+  <!-- Tabla de libros -->
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th>Título</th>
+        <th>Autor(es)</th>
+        <th>Editorial</th>
+        <th>Fecha de Publicación</th>
+        <th>ISBN</th>
+        <th>Número de Páginas</th>
+        <th>Género</th>
+        <th>Idioma</th>
+        <th>Estado</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Aquí se mostrarán dinámicamente las filas de la tabla con los datos de los libros -->
+      <!-- Ejemplo de una fila -->
+      <tr>
+        <td>Ejemplo Título</td>
+        <td>Ejemplo Autor(es)</td>
+        <td>Ejemplo Editorial</td>
+        <td>YYYY-MM-DD</td>
+        <td>Ejemplo ISBN</td>
+        <td>100</td>
+        <td>Ejemplo Género</td>
+        <td>Ejemplo Idioma</td>
+        <td>
+          <!-- Radio input para el estado del libro -->
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="estadoLibro" id="leido" value="leido">
+            <label class="form-check-label" for="leido">Leído</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="estadoLibro" id="noLeido" value="noLeido" checked>
+            <label class="form-check-label" for="noLeido">No leído</label>
+          </div>
+        </td>
+        <td>
+          <!-- Botón para eliminar -->
+          <button class="btn btn-danger btn-sm">Eliminar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Scripts de Bootstrap (jQuery y Popper.js) y Bootstrap JavaScript -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
