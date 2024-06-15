@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -7,23 +8,31 @@ body {
 
 nav {
   background-color: #333;
-  color: #fff;
+  color: #ffffff;
   padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+  background: none;
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
   margin-right: 1rem;
+  background: none;
 }
 
 nav ul li a {
-  color: #fff;
+  color: #c5c5c5;
   text-decoration: none;
+  background: none;
+  
 }
 
 button {
